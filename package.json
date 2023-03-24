@@ -1,0 +1,26 @@
+{
+  "author": "Miquel Brazil",
+  "optionalDependencies": {},
+  "license": "proprietary",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "alpinejs": "^3.10.5",
+    "autoprefixer": "^10.4.13",
+    "core-js": "^3.26.1",
+    "cssnano": "^5.1.14",
+    "date-fns": "^2.29.3",
+    "flowbite-datepicker": "^1.2.2",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "@types/react": "^18.0.25",
+    "rollup-plugin-polyfill-node": "^0.11.0"
+  },
+  "scripts": {},
+  "name": "infinity",
+  "version": "0.0.1"
+}

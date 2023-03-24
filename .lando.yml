@@ -1,0 +1,40 @@
+name: infinity
+env_file:
+  - .env
+services:
+  app:
+    type: php:8.0
+    via: apache
+    ssl: true
+    webroot: public
+    composer_version: 2
+    build:
+        - composer update
+  cache:
+    type: redis:6
+    persist: false
+    portforward: 56381
+  data:
+    type: postgres:13
+    portforward: 51675
+proxy:
+  app:
+    - beyondidentities.loc
+tooling:
+  php:
+    service: app
+    cmd: php
+  composer:
+    service: app
+    cmd: composer
+  console:
+    service: app
+    cmd: bin/console
+  phinx:
+    service: app
+    cmd: bin/phinx
+    level: app
+    options:
+      configuration:
+        passthrough: true
+        default: config/phinx.php
