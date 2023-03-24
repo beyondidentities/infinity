@@ -7,6 +7,11 @@ module.exports = {
     theme: {
         fontFamily: {
             'sans': ['Inter', 'sans-serif']
+        },
+        backgroundImage: {
+            'hero-header': "url('/assets/hero-bgArtboard 1@2x.png')",
+			'bicc-logo': "url('/assets/bicc-logo@2x.png')",
+			'bicc-masthead': "url('/assets/infiniti-masthead.png')"
         }
     },
     plugins: [
